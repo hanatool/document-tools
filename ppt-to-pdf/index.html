@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online PPT to PDF converter tool. Convert PowerPoint presentations to PDF quickly and easily.">
+    <meta name="keywords" content="PPT to PDF, PowerPoint to PDF, converter, online tool">
+    <meta name="author" content="PPT to PDF Tool">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>PPT to PDF Converter</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="bg-white border-bottom shadow-none sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-file-powerpoint text-danger me-2"></i>
+                PPT to PDF
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tools</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow-1">
+
+        <!-- Hero Section -->
+        <section class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+
+                    <h1 class="fw-bold mb-3">
+                        Convert PPT to PDF Online
+                    </h1>
+
+                    <p class="text-secondary mb-4">
+                        Easily convert your PowerPoint presentations into high-quality PDF files
+                        directly from your browser. Fast, secure, responsive, and free to use.
+                    </p>
+
+                    <!-- Upload Card -->
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-5">
+
+                            <div class="mb-4">
+                                <i class="fa-solid fa-cloud-arrow-up fa-4x text-primary"></i>
+                            </div>
+
+                            <h5 class="fw-semibold mb-3">
+                                Upload Your PPT File
+                            </h5>
+
+                            <input 
+                                type="file" 
+                                class="form-control form-control-lg mb-4"
+                                id="pptFile"
+                                accept=".ppt,.pptx"
+                            >
+
+                            <button class="btn btn-primary btn-lg px-5" id="convertBtn">
+                                <i class="fa-solid fa-file-pdf me-2"></i>
+                                Convert to PDF
+                            </button>
+
+                            <div id="resultMessage" class="mt-4"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Space -->
+        <section class="container mb-5">
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body text-center py-5">
+
+                    <p class="text-muted mb-2">
+                        Advertisement Space
+                    </p>
+
+                    <div class="bg-light border rounded-3 py-5">
+                        <h5 class="text-secondary">
+                            728 x 90 Banner Ad
+                        </h5>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="container pb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4 p-lg-5">
+
+                            <h2 class="fw-bold mb-4">
+                                Why Use Our PPT to PDF Converter?
+                            </h2>
+
+                            <p class="text-secondary">
+                                Our online PPT to PDF converter helps you transform PowerPoint presentations
+                                into professional PDF documents in just a few clicks. Whether you need to
+                                share slides securely, preserve formatting, or print documents more easily,
+                                this tool provides a fast and reliable solution.
+                            </p>
+
+                            <div class="row mt-4 g-4">
+
+                                <div class="col-md-4">
+                                    <div class="border rounded-4 p-4 h-100 bg-white">
+                                        <i class="fa-solid fa-bolt fa-2x text-warning mb-3"></i>
+                                        <h5 class="fw-semibold">Fast Conversion</h5>
+                                        <p class="text-secondary small mb-0">
+                                            Convert PowerPoint files to PDF within seconds.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="border rounded-4 p-4 h-100 bg-white">
+                                        <i class="fa-solid fa-shield-halved fa-2x text-success mb-3"></i>
+                                        <h5 class="fw-semibold">Secure Process</h5>
+                                        <p class="text-secondary small mb-0">
+                                            Your uploaded files are processed safely and privately.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="border rounded-4 p-4 h-100 bg-white">
+                                        <i class="fa-solid fa-mobile-screen-button fa-2x text-primary mb-3"></i>
+                                        <h5 class="fw-semibold">Responsive Design</h5>
+                                        <p class="text-secondary small mb-0">
+                                            Fully optimized for desktop, tablet, and mobile devices.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top mt-auto">
+        <div class="container py-4">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-secondary">
+                        © 2026 PPT to PDF Converter. All rights reserved.
+                    </span>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none text-secondary me-3">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="text-decoration-none text-secondary me-3">
+                        Terms
+                    </a>
+
+                    <a href="#" class="text-decoration-none text-secondary">
+                        Contact
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        const convertBtn = document.getElementById('convertBtn');
+        const pptFile = document.getElementById('pptFile');
+        const resultMessage = document.getElementById('resultMessage');
+
+        convertBtn.addEventListener('click', () => {
+
+            if (pptFile.files.length === 0) {
+
+                resultMessage.innerHTML = `
+                    <div class="alert alert-danger">
+                        Please upload a PPT or PPTX file first.
+                    </div>
+                `;
+
+                return;
+            }
+
+            const fileName = pptFile.files[0].name;
+
+            resultMessage.innerHTML = `
+                <div class="alert alert-success">
+                    <i class="fa-solid fa-circle-check me-2"></i>
+                    File <strong>${fileName}</strong> uploaded successfully.
+                    Conversion process started.
+                </div>
+            `;
+        });
+    </script>
+
+</body>
+</html>

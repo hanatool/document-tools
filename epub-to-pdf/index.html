@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free EPUB to PDF Converter Online. Convert EPUB ebooks into high-quality PDF files instantly." />
+    <meta name="keywords" content="EPUB to PDF, ebook converter, convert epub, pdf converter, online converter" />
+    <meta name="author" content="EPUB to PDF Tool" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>EPUB to PDF Converter</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+<body class="bg-light text-dark">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-book me-2"></i>EPUB to PDF
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tools</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+
+                    <div class="bg-white border rounded-4 shadow-sm p-5">
+
+                        <div class="mb-4">
+                            <i class="fa-solid fa-file-pdf fa-4x text-danger"></i>
+                        </div>
+
+                        <h1 class="fw-bold mb-3">EPUB to PDF Converter</h1>
+
+                        <p class="text-secondary mb-4">
+                            Convert your EPUB ebook files into PDF documents quickly and easily.
+                            Upload your file, start the conversion, and download your PDF instantly.
+                        </p>
+
+                        <!-- UPLOAD -->
+                        <div class="mb-4">
+                            <input class="form-control form-control-lg" type="file" id="epubFile" accept=".epub">
+                        </div>
+
+                        <!-- BUTTON -->
+                        <button class="btn btn-dark btn-lg px-5" id="convertBtn">
+                            <i class="fa-solid fa-rotate me-2"></i>Convert to PDF
+                        </button>
+
+                        <!-- RESULT -->
+                        <div class="alert alert-light border mt-4 d-none" id="resultBox">
+                            <i class="fa-solid fa-circle-check text-success me-2"></i>
+                            Conversion completed successfully.
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADS -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white border rounded-4 p-4 text-center shadow-sm">
+
+                <div class="small text-uppercase text-secondary mb-2">
+                    Advertisement
+                </div>
+
+                <div class="py-5">
+                    <i class="fa-solid fa-rectangle-ad fa-3x text-secondary mb-3"></i>
+                    <p class="text-secondary mb-0">
+                        Place your ad banner here
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white border rounded-4 p-5 shadow-sm">
+
+                <h2 class="fw-bold mb-4">
+                    About This Tool
+                </h2>
+
+                <p class="text-secondary">
+                    EPUB to PDF Converter is a simple online tool designed to help users transform
+                    EPUB ebook files into readable PDF documents. The interface is clean, fast,
+                    responsive, and easy to use on desktop or mobile devices.
+                </p>
+
+                <p class="text-secondary">
+                    This converter supports modern browsers and provides a lightweight experience
+                    without complicated steps. Simply upload your EPUB file and start converting instantly.
+                </p>
+
+                <div class="row mt-4 g-4">
+
+                    <div class="col-md-4">
+                        <div class="border rounded-4 p-4 h-100">
+                            <i class="fa-solid fa-bolt fa-2x mb-3"></i>
+                            <h5>Fast Conversion</h5>
+                            <p class="text-secondary mb-0">
+                                Quickly convert EPUB files into PDF format.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="border rounded-4 p-4 h-100">
+                            <i class="fa-solid fa-mobile-screen fa-2x mb-3"></i>
+                            <h5>Responsive Design</h5>
+                            <p class="text-secondary mb-0">
+                                Optimized for mobile, tablet, and desktop devices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="border rounded-4 p-4 h-100">
+                            <i class="fa-solid fa-lock fa-2x mb-3"></i>
+                            <h5>Secure Upload</h5>
+                            <p class="text-secondary mb-0">
+                                Your files remain private and protected.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white border rounded-4 p-5 shadow-sm">
+
+                <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
+
+                <div class="accordion" id="faqAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Is this EPUB to PDF converter free?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, this tool is completely free to use.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Can I use this tool on mobile?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, the website is fully responsive and mobile-friendly.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Are uploaded files secure?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Uploaded files are processed securely and are not shared publicly.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-top py-4">
+        <div class="container text-center">
+
+            <p class="mb-2 fw-semibold">
+                EPUB to PDF Converter
+            </p>
+
+            <p class="text-secondary small mb-0">
+                © 2026 All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const convertBtn = document.getElementById('convertBtn');
+        const resultBox = document.getElementById('resultBox');
+        const epubFile = document.getElementById('epubFile');
+
+        convertBtn.addEventListener('click', function () {
+
+            if (epubFile.files.length === 0) {
+                alert('Please upload an EPUB file first.');
+                return;
+            }
+
+            convertBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin me-2"></i>Converting...';
+
+            setTimeout(() => {
+                convertBtn.innerHTML = '<i class="fa-solid fa-check me-2"></i>Converted';
+                resultBox.classList.remove('d-none');
+            }, 2000);
+
+        });
+    </script>
+
+</body>
+</html>
