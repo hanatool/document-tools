@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free TXT to PDF converter online. Convert text files into PDF instantly with a clean and responsive interface.">
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport' />
+    <meta name="description"
+        content="Free TXT to PDF converter online. Convert text files into PDF instantly with a clean and responsive interface.">
     <meta name="keywords" content="TXT to PDF, text to pdf converter, online pdf converter, bootstrap tool">
     <meta name="author" content="TXT to PDF Tool">
     <meta name="robots" content="index, follow">
@@ -20,7 +22,8 @@
     <!-- jsPDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
-<body class="bg-light text-dark d-flex flex-column min-vh-100">
+
+<body class="bg-light text-dark">
 
     <!-- HEADER -->
     <header class="bg-white border-bottom sticky-top">
@@ -103,12 +106,7 @@
                                         Upload TXT File
                                     </label>
 
-                                    <input 
-                                        type="file" 
-                                        class="form-control form-control-lg" 
-                                        id="txtFile" 
-                                        accept=".txt"
-                                    >
+                                    <input type="file" class="form-control form-control-lg" id="txtFile" accept=".txt">
                                 </div>
 
                                 <div class="mb-4">
@@ -116,19 +114,12 @@
                                         Text Preview
                                     </label>
 
-                                    <textarea 
-                                        id="textPreview"
-                                        class="form-control"
-                                        rows="12"
-                                        placeholder="Your text content will appear here..."
-                                    ></textarea>
+                                    <textarea id="textPreview" class="form-control" rows="12"
+                                        placeholder="Your text content will appear here..."></textarea>
                                 </div>
 
                                 <div class="d-grid">
-                                    <button 
-                                        class="btn btn-dark btn-lg rounded-3"
-                                        id="downloadPdf"
-                                    >
+                                    <button class="btn btn-danger btn-lg rounded-3" id="downloadPdf">
                                         <i class="fa-solid fa-download me-2"></i>
                                         Download PDF
                                     </button>
@@ -154,15 +145,18 @@
                             </h2>
 
                             <p class="text-secondary mb-3">
-                                TXT to PDF Converter is a simple online utility designed to transform plain text files into clean PDF documents directly in your browser.
+                                TXT to PDF Converter is a simple online utility designed to transform plain text files
+                                into clean PDF documents directly in your browser.
                             </p>
 
                             <p class="text-secondary mb-3">
-                                This responsive Bootstrap-based layout works smoothly on desktop, tablet, and mobile devices while maintaining a modern and lightweight appearance.
+                                This responsive Bootstrap-based layout works smoothly on desktop, tablet, and mobile
+                                devices while maintaining a modern and lightweight appearance.
                             </p>
 
                             <p class="text-secondary mb-0">
-                                No installation required. Upload your TXT file, preview the content, and instantly generate a downloadable PDF file.
+                                No installation required. Upload your TXT file, preview the content, and instantly
+                                generate a downloadable PDF file.
                             </p>
                         </div>
 
@@ -180,7 +174,10 @@
 
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <span class="text-secondary">
-                        © 2026 TXT to PDF Converter. All rights reserved.
+                        © <script type='text/javascript'>
+                            var creditsyear = new Date();
+                            document.write(creditsyear.getFullYear());
+                        </script> TXT to PDF Converter. All rights reserved.
                     </span>
                 </div>
 
@@ -211,21 +208,21 @@
         const textPreview = document.getElementById('textPreview');
         const downloadPdf = document.getElementById('downloadPdf');
 
-        txtFile.addEventListener('change', function(event) {
+        txtFile.addEventListener('change', function (event) {
             const file = event.target.files[0];
 
             if (!file) return;
 
             const reader = new FileReader();
 
-            reader.onload = function(e) {
+            reader.onload = function (e) {
                 textPreview.value = e.target.result;
             };
 
             reader.readAsText(file);
         });
 
-        downloadPdf.addEventListener('click', function() {
+        downloadPdf.addEventListener('click', function () {
             const text = textPreview.value.trim();
 
             if (!text) {
@@ -233,7 +230,9 @@
                 return;
             }
 
-            const { jsPDF } = window.jspdf;
+            const {
+                jsPDF
+            } = window.jspdf;
             const doc = new jsPDF();
 
             const lines = doc.splitTextToSize(text, 180);
@@ -245,4 +244,5 @@
     </script>
 
 </body>
+
 </html>

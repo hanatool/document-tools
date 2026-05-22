@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Free Markdown to PDF converter tool. Convert markdown files into clean PDF documents instantly with a modern responsive interface." />
-    <meta name="keywords" content="markdown to pdf, md to pdf, markdown converter, pdf generator, online markdown tool" />
+    <meta name="description"
+        content="Free Markdown to PDF converter tool. Convert markdown files into clean PDF documents instantly with a modern responsive interface." />
+    <meta name="keywords"
+        content="markdown to pdf, md to pdf, markdown converter, pdf generator, online markdown tool" />
     <meta name="author" content="Markdown To PDF" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#ffffff" />
@@ -102,12 +105,8 @@
                                 Markdown Editor
                             </h2>
 
-                            <textarea 
-                                id="markdownInput"
-                                class="form-control mb-4"
-                                rows="18"
-                                placeholder="# Write your markdown here..."
-                            ># Welcome
+                            <textarea id="markdownInput" class="form-control mb-4" rows="18"
+                                placeholder="# Write your markdown here..."># Welcome
 
 This is a **Markdown to PDF** converter.
 
@@ -146,11 +145,8 @@ Thank you for using this tool.
                                 Live Preview
                             </h2>
 
-                            <div 
-                                id="previewArea"
-                                class="border rounded-4 p-4 bg-white overflow-auto"
-                                style="min-height: 500px;"
-                            >
+                            <div id="previewArea" class="border rounded-4 p-4 bg-white overflow-auto"
+                                style="min-height: 500px;">
                                 Preview will appear here...
                             </div>
 
@@ -189,11 +185,15 @@ Thank you for using this tool.
                 </h2>
 
                 <p class="text-secondary">
-                    Markdown To PDF is a simple and modern online tool that helps users convert markdown text into clean PDF documents quickly and efficiently. Whether you are creating notes, technical documentation, articles, or reports, this converter provides a lightweight solution with instant live preview support.
+                    Markdown To PDF is a simple and modern online tool that helps users convert markdown text into clean
+                    PDF documents quickly and efficiently. Whether you are creating notes, technical documentation,
+                    articles, or reports, this converter provides a lightweight solution with instant live preview
+                    support.
                 </p>
 
                 <p class="text-secondary mb-0">
-                    Built with Bootstrap 5 and responsive components, this interface works smoothly across desktop, tablet, and mobile devices while maintaining a minimal and elegant white design.
+                    Built with Bootstrap 5 and responsive components, this interface works smoothly across desktop,
+                    tablet, and mobile devices while maintaining a minimal and elegant white design.
                 </p>
 
             </div>
@@ -245,9 +245,18 @@ Thank you for using this tool.
             const options = {
                 margin: 0.5,
                 filename: 'markdown-document.pdf',
-                image: { type: 'jpeg', quality: 1 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+                image: {
+                    type: 'jpeg',
+                    quality: 1
+                },
+                html2canvas: {
+                    scale: 2
+                },
+                jsPDF: {
+                    unit: 'in',
+                    format: 'a4',
+                    orientation: 'portrait'
+                }
             };
 
             html2pdf().set(options).from(element).save();
@@ -259,4 +268,5 @@ Thank you for using this tool.
     </script>
 
 </body>
+
 </html>

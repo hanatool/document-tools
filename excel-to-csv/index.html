@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Free Excel to CSV Converter Online. Convert XLS and XLSX files into CSV format quickly and easily." />
+    <meta name="description"
+        content="Free Excel to CSV Converter Online. Convert XLS and XLSX files into CSV format quickly and easily." />
     <meta name="keywords" content="Excel to CSV, XLSX to CSV, XLS to CSV, online converter, spreadsheet converter" />
     <meta name="author" content="Excel To CSV Tool" />
     <meta name="theme-color" content="#ffffff" />
@@ -13,6 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body class="bg-light text-dark">
 
     <!-- HEADER -->
@@ -69,12 +72,7 @@
 
                     <div class="bg-white border rounded-4 shadow-sm p-4">
                         <div class="mb-3">
-                            <input 
-                                type="file" 
-                                class="form-control form-control-lg" 
-                                id="excelFile"
-                                accept=".xls,.xlsx"
-                            >
+                            <input type="file" class="form-control form-control-lg" id="excelFile" accept=".xls,.xlsx">
                         </div>
 
                         <button class="btn btn-primary btn-lg w-100" id="convertBtn">
@@ -164,13 +162,17 @@
                 </h2>
 
                 <p class="text-secondary">
-                    This online Excel to CSV converter helps users transform spreadsheet files into CSV format quickly and efficiently.
-                    CSV files are widely used for importing and exporting data between applications, databases, and spreadsheet tools.
+                    This online Excel to CSV converter helps users transform spreadsheet files into CSV format quickly
+                    and efficiently.
+                    CSV files are widely used for importing and exporting data between applications, databases, and
+                    spreadsheet tools.
                 </p>
 
                 <p class="text-secondary mb-0">
-                    The tool is designed with a modern Bootstrap interface, responsive layout, and lightweight structure to provide
-                    a smooth experience across all devices. Simply upload your Excel file, click convert, and download the generated CSV file instantly.
+                    The tool is designed with a modern Bootstrap interface, responsive layout, and lightweight structure
+                    to provide
+                    a smooth experience across all devices. Simply upload your Excel file, click convert, and download
+                    the generated CSV file instantly.
                 </p>
             </div>
         </div>
@@ -224,7 +226,7 @@
 
             const reader = new FileReader();
 
-            reader.onload = function(e) {
+            reader.onload = function (e) {
                 const data = new Uint8Array(e.target.result);
 
                 const workbook = XLSX.read(data, {
@@ -252,4 +254,5 @@
     </script>
 
 </body>
+
 </html>
