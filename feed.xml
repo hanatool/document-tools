@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+  <channel>
+
+    <title>Hanapha Document Tools</title>
+    <link>https://tools.hanapha.com/document-tools</link>
+
+    <description>
+      Free online document tools for converting, comparing, merging, viewing, and managing PDF, DOCX, CSV, TXT, EPUB, and presentation files.
+    </description>
+
+    <language>en-us</language>
+
+    <item>
+      <title>CSV Viewer</title>
+      <link>https://tools.hanapha.com/document-tools/csv-viewer</link>
+      <description>
+        Open and view CSV files directly in your browser.
+      </description>
+    </item>
+
+    <item>
+      <title>Document Compare Tool</title>
+      <link>https://tools.hanapha.com/document-tools/document-compare-tool</link>
+      <description>
+        Compare document files and detect differences instantly.
+      </description>
+    </item>
+
+    <item>
+      <title>EPUB to PDF</title>
+      <link>https://tools.hanapha.com/document-tools/epub-to-pdf</link>
+      <description>
+        Convert EPUB ebook files into PDF documents online.
+      </description>
+    </item>
+
+    <item>
+      <title>Excel to CSV</title>
+      <link>https://tools.hanapha.com/document-tools/excel-to-csv</link>
+      <description>
+        Convert Excel spreadsheets into CSV format quickly.
+      </description>
+    </item>
+
+    <item>
+      <title>Markdown to PDF</title>
+      <link>https://tools.hanapha.com/document-tools/markdown-to-pdf</link>
+      <description>
+        Convert Markdown documents into PDF files online.
+      </description>
+    </item>
+
+    <item>
+      <title>Merge DOCX</title>
+      <link>https://tools.hanapha.com/document-tools/merge-docx</link>
+      <description>
+        Combine multiple DOCX files into a single document.
+      </description>
+    </item>
+
+    <item>
+      <title>ODT Converter</title>
+      <link>https://tools.hanapha.com/document-tools/odt-converter</link>
+      <description>
+        Convert ODT document files online easily.
+      </description>
+    </item>
+
+    <item>
+      <title>PPT to PDF</title>
+      <link>https://tools.hanapha.com/document-tools/ppt-to-pdf</link>
+      <description>
+        Convert PowerPoint presentations into PDF documents.
+      </description>
+    </item>
+
+    <item>
+      <title>RTF Converter</title>
+      <link>https://tools.hanapha.com/document-tools/rtf-converter</link>
+      <description>
+        Convert RTF document files into other formats online.
+      </description>
+    </item>
+
+    <item>
+      <title>TXT to PDF</title>
+      <link>https://tools.hanapha.com/document-tools/txt-to-pdf</link>
+      <description>
+        Convert plain text files into PDF documents instantly.
+      </description>
+    </item>
+
+    <item>
+      <title>Word Counter</title>
+      <link>https://tools.hanapha.com/document-tools/word-counter</link>
+      <description>
+        Count words, characters, and reading time online.
+      </description>
+    </item>
+
+  </channel>
+
+</rss>

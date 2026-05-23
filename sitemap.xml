@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/csv-viewer</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/document-compare-tool</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/epub-to-pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/excel-to-csv</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/markdown-to-pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/merge-docx</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/odt-converter</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/ppt-to-pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/rtf-converter</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/txt-to-pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/word-counter</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/404.html</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/document-tools/index.html</loc>
+  </url>
+
+</urlset>
